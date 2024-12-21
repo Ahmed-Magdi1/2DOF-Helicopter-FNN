@@ -22,3 +22,11 @@ The model is trained and validated using real data representing the helicopter's
 The input and output data are stored in separate CSV files:
 - [`inputs.csv`](inputs.csv): Contains columns `V`, `I_pitch`, `I_yaw`.
 - [`outputs.csv`](outputs.csv): Contains columns `pitch_angle`, `yaw_angle`.
+
+## Using the Trained Model
+- Ensure the trained model file [`2dof_helicopter_model.h5`](2dof_helicopter_model.h5) is uploaded in colab.
+  
+- Use the model and change the inputs dat to make predictions:
+   ```python
+   new_input = np.array([[V, I_pitch, I_yaw]])  # Voltage, I_pitch, I_yaw
+   ```
